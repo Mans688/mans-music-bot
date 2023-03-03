@@ -1,0 +1,85 @@
+{
+    "name": "ՏOᑌᖇᑕE ᗰᑌՏIᑕ ᗰᗩᑎՏ ‌",
+    "description": "تشغيل الاغاني في المجموعات",
+    "logo": "https://telegra.ph/file/5c434e6479b5d0428a743.jpg",
+    "keywords": [
+        "py-tgcalls",
+        "telegram bot",
+        "video stream",
+        "live stream",
+        "music stream",
+        "mongodb",
+        "pyrogram"
+    ],
+    "website": "https://t.me/M_8_S_H7",
+    "repository": "https://github.com/muntazer995/RR8R9",
+    "success_url": "https://t.me/vip_D_A_D",
+    "env": {
+     "API_ID": {
+            "description": "لاتغيرها ابدا",
+            "required": true,
+            "value": "19697852"
+        },
+     "API_HASH": {
+            "description": "لاتغيرها ابدا",
+            "required": true,
+            "value": "ec1826f77dae9cfaa78bc161b5af05b4"
+        },
+        "BOT_TOKEN": {
+            "description": "اكتب توكن",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "اكتب معرف البوت بدون @",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "اكتب كود ترمكس",
+            "required": true
+        },
+        "MONGODB_URL": {
+            "description": "اكتب قاعدة البيانات",
+            "required": true,
+            "value": "mongodb+srv://vro:vro@cluster0.eyy25.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        },
+        "SUDO_USERS": {
+            "description": "اكتب ايديات المطورين",
+            "required": true,
+            "value": "1854384004"
+        },
+        "OWNER_ID": {
+            "description": "اكتب ايدي مالك البوت",
+            "required": true,
+            "value": "1854384004"
+        },
+        "OWNER_USERNAME": {
+            "description": "اكتب معرف المطور بدون @",
+            "required": true,
+            "value": "vip_D_A_D"
+        },
+        "ALIVE_NAME": {
+            "description": "اكتب اسم المطور",
+            "required": true,
+            "value": "frank"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
